@@ -18,7 +18,9 @@ function App() {
     setError(null)
 
     try {
-      const response = await fetch('/api/plan-trip', {
+      // Use environment variable for API URL, fallback to relative path for local dev
+      const apiUrl = import.meta.env.VITE_API_URL || ''
+      const response = await fetch(`${apiUrl}/api/plan-trip`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
