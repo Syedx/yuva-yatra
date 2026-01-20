@@ -428,6 +428,23 @@ a:hover {
   width: 100%;
 }
 
+.btn-download {
+  background: var(--primary);
+  color: white;
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 15px rgba(26, 58, 92, 0.3);
+}
+
+.btn-download:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(26, 58, 92, 0.4);
+}
+
+.btn-download:active {
+  transform: translateY(0);
+}
+
 /* =====================================================
    Loading Animation
    ===================================================== */
